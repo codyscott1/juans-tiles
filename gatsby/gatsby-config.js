@@ -5,6 +5,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Dongle`],  
+        display: "swap",  
+      },
+    },
+    {
       resolve: "gatsby-source-sanity",
       options: {
         projectId: "3cbcypje",
