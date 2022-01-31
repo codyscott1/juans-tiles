@@ -27,7 +27,7 @@ const Grid = () => {
       {filtered.map(({ gatsbyImageData, original }) => (
         <div
           key={original.src}
-          className="sm:basis-1/2 basis-full p-2.5 even:pr-5 odd:pl-5"
+          className="sm:basis-1/2 basis-full p-2.5 even:sm:pr-5 odd:sm:pl-5"
           id="portfolio"
         >
           <GatsbyImage
