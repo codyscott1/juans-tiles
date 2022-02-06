@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import LanguageSelector from "../components/LanguageSelector";
 import About from "../components/About";
 import Contact from "../components/Contact";
+import Video from "../components/Video";
 
 const IndexPage = () => {
   const [isSpanish, setIsSpanish] = useState(false);
@@ -20,11 +21,12 @@ const IndexPage = () => {
             <LanguageSelector onClick={handleClick} />
             <Header />
           </div>
-          <Grid />
-          <div className="px-5 bg-amber-50">
-            <About />
+          <div className="grid md:grid-cols-10 p-5">
+            <Video />
             <Contact />
+            <About />
           </div>
+          <Grid />
         </div>
       </BackgroundSection>
     </Provider>
