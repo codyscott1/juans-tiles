@@ -15,20 +15,19 @@ const IndexPage = () => {
 
   return (
     <Provider language={isSpanish ? "es" : "en"} translation={translation}>
-      <BackgroundSection>
-        <div className="max-w-screen h-screen font-Dongle leading-3">
-          <div className="px-5">
-            <LanguageSelector onClick={handleClick} />
-            <Header />
-          </div>
-          <div className="grid md:grid-cols-10 p-5 text-center gap-y-5 md:gap-y-0">
-            <Video />
-            <Contact />
-            <About />
-          </div>
-          <Grid />
+      <BackgroundSection />
+      <div className="max-w-screen h-screen font-Dongle leading-3 z-40">
+        <div className="px-5">
+          <LanguageSelector onClick={handleClick} />
+          <Header />
         </div>
-      </BackgroundSection>
+        <div className="grid md:grid-cols-10 text-center gap-y-5 md:gap-y-0 border-b-2 border-stone-500 mx-5 py-5">
+          <Video />
+          <Contact />
+          <About />
+        </div>
+        <Grid />
+      </div>
     </Provider>
   );
 };

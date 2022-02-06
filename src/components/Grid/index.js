@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
+import ExpandableImage from "./ExpandableImage";
 
 const Grid = () => {
   const {
@@ -23,19 +24,15 @@ const Grid = () => {
   );
 
   return (
-    <div className="flex flex-wrap w-full bg-amber-50 pt-2.5">
-      {filtered.map(({ gatsbyImageData, original }) => (
-        <div
-          key={original.src}
-          className="sm:basis-1/2 basis-full p-2.5 even:sm:pr-5 odd:sm:pl-5"
-          id="portfolio"
-        >
+    <div className="flex flex-wrap w-full md:p-10 p-5 md:gap-12 gap-5 justify-center">
+      {filtered.map(({ gatsbyImageData }, index) => (
+        <ExpandableImage key={index}>
           <GatsbyImage
             image={gatsbyImageData}
             quality={100}
             alt="portfolio example"
           />
-        </div>
+        </ExpandableImage>
       ))}
     </div>
   );
