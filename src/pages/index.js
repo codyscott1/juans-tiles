@@ -21,7 +21,7 @@ const IndexPage = () => {
             <LanguageSelector onClick={handleClick} />
             <Header />
           </div>
-          <div className="grid md:grid-cols-10 p-5">
+          <div className="grid md:grid-cols-10 p-5 text-center gap-y-5 md:gap-y-0">
             <Video />
             <Contact />
             <About />
