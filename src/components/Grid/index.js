@@ -24,7 +24,7 @@ const Grid = () => {
   );
 
   return (
-    <div className="flex flex-wrap w-full md:p-10 p-5 md:gap-12 gap-5 justify-center">
+    <div className="flex flex-wrap flex-auto w-full md:p-10 p-5 md:gap-12 gap-5">
       {filtered.map(({ gatsbyImageData }, index) => (
         <ExpandableImage key={index}>
           <GatsbyImage

@@ -1,6 +1,6 @@
 const translation = {
   switch: {
-    en: "Cambiar a español",
+    en: "Cambiar a espanol",
     es: "See in English",
   },
   tiles: {
