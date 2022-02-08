@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex justify-center flex-wrap py-5 border-b-2 border-stone-500 group pt-20 md:pt-5">
+      <div className="flex justify-center flex-wrap py-5 border-b-2 border-stone-500 group">
         <SkewedText>
           <p className="text-7xl">Juan's</p>
         </SkewedText>
@@ -36,19 +36,25 @@ const Header = () => {
       <nav className="group flex justify-center flex-wrap py-5 border-b-2 border-stone-500">
         <SkewedText>
           <Link to="#about">
-            <Translate text="about" />
+            <div className="hidden sm:inline-block">
+              <Translate text="about" />
+            </div>
             📖
           </Link>
         </SkewedText>
         <SkewedText>
           <Link to="#contact">
-            <Translate text="contact" />
+            <div className="hidden sm:inline-block">
+              <Translate text="contact" />
+            </div>
             📱
           </Link>
         </SkewedText>
         <SkewedText>
           <Link to="#portfolio">
-            <Translate text="portfolio" />
+            <div className="hidden sm:inline-block">
+              <Translate text="portfolio" />
+            </div>
             🤯
           </Link>
         </SkewedText>

@@ -17,7 +17,7 @@ const ExpandableImage = ({ children }) => {
         aria-label="expand photo"
       >
         {children}
-        <div className="opacity-0 group-hover:opacity-100 transition-all absolute top-5 right-5 duration-500 scale-150 group-hover:animate-pulse">
+        <div className="opacity-0 group-hover:opacity-100 transition-all absolute top-5 right-5 scale-150 group-hover:animate-pulse">
           {isExpanded ? "❌" : "🔎"}
         </div>
       </button>

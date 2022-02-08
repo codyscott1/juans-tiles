@@ -6,6 +6,7 @@ const BackgroundSection = () => (
     src="../../images/background/marble.webp"
     alt="background"
     className="fixed top-0 left-0 min-h-full min-w-full -z-10"
+    fixed
   />
 );
 
